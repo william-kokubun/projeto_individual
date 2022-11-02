@@ -64,9 +64,6 @@
                     <span class="tipo_campo">Nome:</span>
                     <input id="nome_input" type="text" placeholder="Seu nome">
 
-                    <span class="tipo_campo">CNPJ:</span>
-                    <input id="cnpj_input" type="text" placeholder="12345678901234">
-
                     <span class="tipo_campo">E-mail:</span>
                     <input id="email_input" type="text" placeholder="meuemail@provedor.com">
 
@@ -115,12 +112,11 @@
         //Recupere o valor da nova input pelo nome do id
         // Agora vá para o método fetch logo abaixo
         var nomeVar = nome_input.value;
-        var cnpjVar = cnpj_input.value;
         var emailVar = email_input.value;
         var senhaVar = senha_input.value;
         var confirmacaoSenhaVar = confirmacao_senha_input.value;
 
-        if (nomeVar == "" || cnpjVar == "" || emailVar == "" || senhaVar == "" || confirmacaoSenhaVar == "") {
+        if (nomeVar == "" || emailVar == "" || senhaVar == "" || confirmacaoSenhaVar == "") {
             cardErro.style.display = "block"
             mensagem_erro.innerHTML = "(Mensagem de erro para todos os campos em branco)";
 
@@ -145,7 +141,6 @@
                 // crie um atributo que recebe o valor recuperado aqui
                 // Agora vá para o arquivo routes/usuario.js
                 nomeServer: nomeVar,
-                cnpjServer: cnpjVar,
                 emailServer: emailVar,
                 senhaServer: senhaVar
             })
