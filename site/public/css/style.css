@@ -43,7 +43,7 @@ body {
   align-items: center;
   justify-content: space-between;
   list-style: none;
-  color:white ;
+  color: white;
 }
 
 
@@ -74,7 +74,7 @@ body {
   display: flex;
 }
 
-.tamanho-conteudo { 
+.tamanho-conteudo {
   height: fit-content !important;
 }
 
@@ -133,12 +133,12 @@ body {
 /* LOGIN */
 
 .banner .container .card {
-  background-color:darkred;
+  background-color: darkred;
   height: fit-content;
   width: 400px;
   display: flex;
   flex-direction: column;
-  color:white;
+  color: white;
   align-items: center;
   border-radius: 4px;
 }
@@ -166,7 +166,7 @@ button {
 
 /* FORMULARIO */
 
-.alerta_erro{
+.alerta_erro {
   display: flex;
   justify-content: flex-end;
 }
@@ -178,12 +178,12 @@ button {
   width: 230px;
   position: fixed;
   border-radius: 4px;
-  border:darkred 3px solid;
+  border: darkred 3px solid;
   padding: 10px;
   margin-right: 10%;
 }
 
-.card_erro #mensagem_erro{
+.card_erro #mensagem_erro {
   font-weight: 500;
   font-size: 20px;
 }
@@ -345,29 +345,35 @@ input {
 /* tentativa aqui*/
 :root {
   --primary: black;
-  /*--primary-gradient: linear-gradient(45deg, black 0%, darkred 100%);*/
+   /* primary-gradient: linear-gradient(45deg, black 0%, darkred 100%);  */
 }
+
 .section-header {
   text-align: center;
 }
+
 .section-header h2 {
   font-size: 28px;
   font-weight: 700;
   margin-bottom: 16px;
 }
+
 .section-header hr {
   border: 1px solid black;
   width: 56px;
 }
+
 .bg-gradient_solid {
   background: var(--primary-gradient);
-  color:black;
+  color: black;
   padding: 48px 0;
 }
+
 .steps {
   position: relative;
   margin-top: 32px;
 }
+
 .steps::after {
   content: "";
   position: absolute;
@@ -442,16 +448,38 @@ input {
   .steps::after {
     left: 32px;
   }
+
   .steps-container {
     left: 0;
     flex-direction: row-reverse;
     width: auto;
     margin-bottom: 16px;
   }
+
   .steps .steps-container:nth-child(even) {
     left: 0;
   }
 }
 
+.video {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: darkred;
+  width: 80%;
+  margin: auto;
+  padding: 30px;
+  border-radius: 0px 0px 100px 100px;
+  color: white;
 
+}
 
+.video h3,
+.video h4 {
+  margin: 0px;
+}
+
+.song embed {
+  margin: 13px 0 -61px 0;
+}
